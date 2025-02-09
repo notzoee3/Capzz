@@ -12,9 +12,7 @@ NODE_IDS = [
 
 CAPFIZZ_WS_URL = "wss://capfizz.com/ws"  # Ganti dengan URL WebSocket yang benar
 
-async def ping_node(node_id):
-    try:
-        async with websockets.connect(wss://mainnet-realtime.capfizz.com/socket.io/?EIO=4&transport=websocket) as ws:
+async with websockets.connect("wss://mainnet-realtime.capfizz.com/socket.io/?EIO=4&transport=websocket") as ws:
             ping_data = {
                 "action": "ping",
                 "node_id": node_id
