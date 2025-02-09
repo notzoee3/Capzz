@@ -20,7 +20,6 @@ async with websockets.connect("wss://mainnet-realtime.capfizz.com/socket.io/?EIO
             await ws.send(json.dumps(ping_data))
             response = await ws.recv()
             print(f"Ping response for node {node_id}: {response}")
-
     except Exception as e:
         print(f"Error on node {node_id}: {e}")
 
